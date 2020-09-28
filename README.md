@@ -21,7 +21,7 @@ Here there’s a fun git-based game that Nico gave me before I joined. It can he
 # what is github good for
 - `git format-patch master --stdout > fix_empty_poster.patch`
 - (pull requests)[https://github.com/tomasbulva/git-basics/pulls]
-
+- sdfsdfsdfsdf
 
 # basic work
   ```bash
