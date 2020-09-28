@@ -11,6 +11,8 @@ Here there’s a fun git-based game that Nico gave me before I joined. It can he
 - [git log --graph](https://elsevier-scopus.slack.com/archives/D01BL8H7XR7/p1601021342000200)
 - [zine pdf](https://elsevier.enterprise.slack.com/files/WN1VDAZ0R/F01BDR3VDK6/dangit-git-zine.pdf)
 - [cheetsheet](https://elsevier-scopus.slack.com/archives/D01BL8H7XR7/p1601022431000600)
+- [tig](https://jonas.github.io/tig/INSTALL.html#_installation_using_homebrew)
+- [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
 
 
 # branches
@@ -74,6 +76,14 @@ Here there’s a fun git-based game that Nico gave me before I joined. It can he
   git commit --amend -no-edit
   ```
 
+  continue or abort
+
+  `git merge --contine`
+  `git merge --abort`
+
+  `git rebase --continue`
+  `git rebase --abort`
+
 # advanced
   ```bash
   git config --global init.defaultBranch {branchName}
@@ -107,5 +117,32 @@ Here there’s a fun git-based game that Nico gave me before I joined. It can he
   `atom .git/config`
 
 # how to delete BRANCHES
+## local branch
   - `git branch -d local-branch-name`
-  - `git branch -D remote-branch-name`
+  - `git branch -D local-branch-name #force delete`
+
+## delete remote branch
+  - `git push origin --delete remote-branch-name`
+
+# get the scoop
+ - `git annotate -- path/filename`
+ - `git blame -- path/filename`
+
+# cherry picking
+  will bring specific commit from one branch to other branch
+  get the hash you want to bring.
+  cherry pick from the destination branch
+
+  - `git cherry-pick SHA`
+  - `git cherry-pick SHA SHA SHA`
+
+  - `git cherry-pick --continue`
+  - `git cherry-pick --abort`
+
+# productivity
+## set aliases
+  .bashrc or .zshrc
+  - `alias gm="git commit -m "`
+
+## oh my zsh
+  [oh my zsh git cheatsheet](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet)
